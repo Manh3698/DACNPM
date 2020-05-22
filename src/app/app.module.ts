@@ -18,10 +18,12 @@ import { CommentComponent } from './comment/comment.component';
 import { AddReviewComponent } from './review/add-review/add-review.component';
 import { EditReviewComponent } from './review/edit-review/edit-review.component';
 import { ListReviewComponent } from './review/list-review/list-review.component';
-import { RateComponent } from './rate/rate.component';
 import { AddImgComponent } from './images/add-img/add-img.component';
 import { EditImgComponent } from './images/edit-img/edit-img.component';
 import { ListImgComponent } from './images/list-img/list-img.component';
+import { AddRateComponent } from './rate/add-rate/add-rate.component';
+import { EditRateComponent } from './rate/edit-rate/edit-rate.component';
+import { ListRateComponent } from './rate/list-rate/list-rate.component';
 
 @NgModule({
   declarations: [
@@ -41,10 +43,12 @@ import { ListImgComponent } from './images/list-img/list-img.component';
     AddReviewComponent,
     EditReviewComponent,
     ListReviewComponent,
-    RateComponent,
     AddImgComponent,
     EditImgComponent,
     ListImgComponent,
+    AddRateComponent,
+    EditRateComponent,
+    ListRateComponent,
   ],
   imports: [
     BrowserModule,
