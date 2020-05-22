@@ -1,38 +1,18 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<div class="col-md-3"></div>
-<div class="col-md-6 user-container" style="margin-top:50px">
-    <h2 class="text-center">Edit User</h2>
-    <form>
-      <div class="hidden">
-        <input type="text" formControlName="id" placeholder="id" name="id" class="form-control" id="id">
-      </div>
-      <div class="form-group">
-        <label for="username">User Name:</label>
-        <input type="text" formControlName="username" placeholder="username" name="username" class="form-control" id="username" readonly="true">
-      </div>
+<div>
+  <form action="">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
   
-      <div class="form-group">
-        <label for="firstName">First Name:</label>
-        <input formControlName="firstName" placeholder="First Name" name="firstName" class="form-control" id="firstName">
-      </div>
-  
-      <div class="form-group">
-        <label for="lastName">Last Name:</label>
-        <input formControlName="lastName" placeholder="Last name" name="lastName" class="form-control" id="lastName">
-      </div>
-  
-      <div class="form-group">
-        <label for="age">Age:</label>
-        <input type="number" formControlName="age" placeholder="age" name="age" class="form-control" id="age">
-      </div>
-  
-      <div class="form-group">
-        <label for="salary">Salary:</label>
-        <input type="number" formControlName="salary" placeholder="salary" name="salary" class="form-control" id="salary">
-      </div>
-  
-      <button class="btn btn-success">Update</button>
-    </form>
-  </div>
+    <input type="submit" value="Submit">
+  </form>
+</div>

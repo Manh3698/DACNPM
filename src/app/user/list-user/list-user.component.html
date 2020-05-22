@@ -1,10 +1,7 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<div class="col-md-12 user-container">
-    <button class="btn btn-success" style="width:100px" routerLink="/edit-user"> Add User</button>
-    <h1 style="text-align: center;">List User</h1>
-    <table class="table table-striped">
+<div class="table">
+    <button class="btn-add" routerLink="/edit-user"> Add User</button>
+    <h1>List User</h1>
+    <table class="table">
       <thead>
       <tr>
         <th>Id</th>
@@ -13,6 +10,8 @@
         <th>UserName</th>
         <th>Age</th>
         <th>Salary</th>
+        <th>Delete</th>
+        <th>Edit</th>
       </tr>
       </thead>
       <tbody>
@@ -23,8 +22,8 @@
         <td>4444444444</td>
         <td>555555555</td>
         <td>6666666666</td>
-        <td><button class="btn btn-success" > Delete</button></td>
-        <td><button class="btn btn-success"  style="margin-left: 20px;"> Edit</button></td>
+        <td><button class="btn" > Delete</button></td>
+        <td><button class="btn" > Edit</button></td>
       </tr>
 
       <tr>
@@ -34,8 +33,8 @@
         <td>4444444444</td>
         <td>555555555</td>
         <td>6666666666</td>
-        <td><button class="btn btn-success" > Delete</button></td>
-        <td><button class="btn btn-success"  style="margin-left: 20px;"> Edit</button></td>
+        <td><button class="btn" > Delete</button></td>
+        <td><button class="btn" > Edit</button></td>
       </tr>
 
       <tr>
@@ -45,8 +44,8 @@
         <td>4444444444</td>
         <td>555555555</td>
         <td>6666666666</td>
-        <td><button class="btn btn-success" > Delete</button></td>
-        <td><button class="btn btn-success"  style="margin-left: 20px;"> Edit</button></td>
+        <td><button class="btn" > Delete</button></td>
+        <td><button class="btn" > Edit</button></td>
       </tr>
 
       </tbody>
