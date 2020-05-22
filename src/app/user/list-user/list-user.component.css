@@ -21,16 +21,21 @@ table.table tr:nth-child(odd) {
 
 .btn-delete{
     width: 50%;
-    background-color:rgb(185, 27, 21);
+    
+    background-color: rgb(218, 25, 19);
     color: white;
     padding: 10px;
     margin: 8px 0;
-    border: none;
+    border: none; background-color: rgb(218, 25, 19);
     border-radius: 4px;
     cursor: pointer;
   }
   
-.btn:hover{
+.btn-delete:hover{
+    background-color:rgb(185, 27, 21);
+}
+
+.btn-edit:hover{
     background-color: #45a049;
 }
 .btn-add{
