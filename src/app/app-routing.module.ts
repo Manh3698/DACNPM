@@ -11,6 +11,10 @@ import { ListUniComponent } from './university/list-uni/list-uni.component'
 import {ListRateComponent}  from './rate/list-rate/list-rate.component'
 import { AddRateComponent } from './rate/add-rate/add-rate.component';
 import { EditRateComponent } from './rate/edit-rate/edit-rate.component';
+import { AddFacComponent } from './facculty/add-fac/add-fac.component'
+import { EditFacComponent } from './facculty/edit-fac/edit-fac.component'
+import { ListFacComponent } from './facculty/list-fac/list-fac.component'
+import { CommentComponent } from './comment/comment.component'
 
 const routes: Routes = [
   { path: 'home',component: HomepageComponent },
@@ -24,6 +28,10 @@ const routes: Routes = [
   { path: 'rate', component: ListRateComponent },
   { path: 'add-rate', component: AddRateComponent},
   { path: 'edit-rate', component: EditRateComponent},
+  { path: 'fac', component: ListFacComponent},
+  { path: 'add-fac', component: AddFacComponent},
+  { path: 'edit-fac', component: EditFacComponent},
+  { path: 'cmt', component: CommentComponent}
 ];
 
 @NgModule({
