@@ -24,7 +24,8 @@ import { ListImgComponent } from './images/list-img/list-img.component';
 import { AddRateComponent } from './rate/add-rate/add-rate.component';
 import { EditRateComponent } from './rate/edit-rate/edit-rate.component';
 import { ListRateComponent } from './rate/list-rate/list-rate.component';
-
+import { HttpClientModule } from '@angular/common/http'
+import { ReactiveFormsModule } from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +53,9 @@ import { ListRateComponent } from './rate/list-rate/list-rate.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

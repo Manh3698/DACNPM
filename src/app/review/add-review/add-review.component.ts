@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ApiService } from '../../api.service'
 @Component({
   selector: 'app-add-review',
   templateUrl: './add-review.component.html',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddReviewComponent implements OnInit {
 
-  constructor() { }
+  datas;
+  constructor(private apiService: ApiService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.apiService.getNews().subscribe((data: any) => {
+      this.datas = data.data.data;
+      // console.log(this.datas)
+    });
   }
 
 }

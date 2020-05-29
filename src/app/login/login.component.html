@@ -1,4 +1,4 @@
-<div class="login-page">
+<!-- <div class="login-page">
     <div class="form">
       <form class="register-form">
         <input type="text" placeholder="name"/>
@@ -14,4 +14,15 @@
         <p class="message">Not registered? <a href="#">Create an account</a></p>
       </form>
     </div>
-  </div>
+  </div> -->
+ <form [formGroup] = "loginForm" (ngSubmit)="onSubmit()">
+   <label>
+     Email: 
+     <input type="text" formControlName = "email">
+   </label>
+   <label>
+      Password: 
+      <input type="text" formControlName = "password">
+   </label>
+   <button type="submit"> Submit </button>
+ </form>
